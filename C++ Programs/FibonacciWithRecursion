@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int fib(int n) {    //recursive function
+   if (n <= 1)
+   return n;
+   return fib(n-1) + fib(n-2);
+}
+int main () {
+   int n, i;
+   cin>>n; //accepting value of n from user
+   for(i=0;i<n;i++)
+   cout<<fib(i)<<" "; //calling the function each time
+   return 0;
+}
